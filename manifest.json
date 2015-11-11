@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Treehouse HDify",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://teamtreehouse.com/*"],
+      "js": ["jquery-2.1.4.min.js", "app.js"]
+    }
+  ]
+}
