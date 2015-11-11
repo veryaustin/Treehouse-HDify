@@ -2,10 +2,19 @@
   "manifest_version": 2,
   "name": "Treehouse HDify",
   "version": "1.0",
+  "description": "This extension upgrades the iTunes subscribe link on teamtreehouse.com to subscribe to an HD feed.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon48.png",
+    "128": "icon128.png" },
+  "author": "Austin Lauritsen",
   "content_scripts": [
     {
       "matches": ["https://teamtreehouse.com/*"],
       "js": ["jquery-2.1.4.min.js", "app.js"]
     }
-  ]
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
 }
